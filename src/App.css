@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +25,46 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.App-board {
+  display: flex;
+  justify-content: center;
+}
+
+.Column {
+  padding: 1em;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Column--highlighted {
+  border: 2px dashed cornflowerblue;
+  opacity: 0.5;
+}
+
+.Card {
+  margin: 0.5em;
+  padding: 1em;
+  background: cornflowerblue;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.Card-button {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.Card-button:hover {
+  opacity: 0.8;
 }
 
 @keyframes App-logo-spin {
